@@ -38,6 +38,9 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     runtime("com.h2database:h2")
     runtime("mysql:mysql-connector-java")
+    runtime("org.postgresql:postgresql:9.4-1201-jdbc41") {
+        exclude group: "org.slf4j", module: "slf4j-simple"
+    }
     testCompile("org.springframework.boot:spring-boot-starter-test") 
 }
 

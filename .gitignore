@@ -1,3 +1,6 @@
 *.classpath
-*.idea
-*.iml
+diary.iml
+/build
+/.idea
+/.gradle
+*.log
